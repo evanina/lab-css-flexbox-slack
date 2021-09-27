@@ -11,6 +11,9 @@
       rel="stylesheet"
     />
 
+    <!-- link Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scheherazade+New">
+
     <!-- link your styles -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Where work happens | Slack</title>
@@ -19,6 +22,7 @@
   <body>
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
@@ -27,7 +31,6 @@
       </ul>
     </nav>
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,8 +38,12 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <form>
+        <input placeholder="Email address">
+        <button type="button" name="button">GET STARTED</button>
+        <p>Already using Slack? <a href="#">Sign in</a></p>
+      </form>
+      <img src="./images/home_talking.png" alt="home_work_happening" />
     </header>
     <main>
       <div>
@@ -47,16 +54,26 @@
         </p>
         <button>DISCOVER WHY</button>
         <img src="./images/airbnb-logo.png" alt="" />
+        <hr>
         <img src="./images/capital-one-logo.png" alt="" />
+        <hr>
         <img src="./images/harvard-logo.png" alt="" />
+        <hr>
         <img src="./images/los-angeles-times-logo.png" alt="" />
+        <hr>
         <img src="./images/oracle-logo.png" alt="" />
+        <hr>
         <img src="./images/ticketmaster-logo.png" alt="" />
+        <hr>
       </div>
       <div>
+        <form>
         <p>Try it for free</p>
         <p>Already using Slack? <a href="">Sign in</a></p>
+        <input placeholder="Email address">
         <button type="button" name="button">GET STARTED</button>
+      </form>
+      <hr>
       </div>
     </main>
     <footer>

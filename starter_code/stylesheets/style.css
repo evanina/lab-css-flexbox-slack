@@ -1,7 +1,126 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root {
+    --background-grey: #F4F3F4;
+    --button-purple: #192592;
+    --main-titles-dark-grey: #2C303F;
+    --paragraph-grey: #5b5e6d;
+    --nav-grey: #5b5e6d;
+}
+
+html {
+    font-size: 10px;
+}
+
+html img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-family: "Scheherazade New";
+    color: var(--main-titles-dark-grey);
+    font-weight: bolder;
+    line-height: 1em;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.333;
+    color: var(--nav-grey);
+    font-size: 1.6rem;
+}
+
+a {
+    color: var(--button-purple);
+}
+
+nav {
+    border-bottom: 1px solid var(--nav-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header {
+    padding: 10px 20px;
+}
+
+main > :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-grey);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main > :first-child > button {
+    background: white;
+    color: var(--button-purple);
+    border: 1px solid var(--button-purple);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > button,
+form > input,
+main > :first-child > button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+form > p {
+    text-align: center;
+}
+
+form > input {
+    border: 1px solid var(--nav-grey);
+}
+
+form > button {
+    background: var(--button-purple);
+    color: white;
+    border: none;
+}
+
+.fa-bars {
+    display: none;   
+}
+
+hr {
+    color: var(--nav-grey);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav > img {
+        width: 30%;
+    }
+    
+    .fa-bars {
+        display: block;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    main > :first-child > img {
+        height: 30px;
+        margin: 20px 0;
+    }
+
+}
